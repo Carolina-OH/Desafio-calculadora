@@ -107,10 +107,9 @@ function resolver(){
             break;
     }
     resetear();
-    if (res="NaN" || "Inf") {
+    if (isNaN(res) || !isFinite(res)) {
         resultado.textContent="ERROR";
     } else {
-    
-    resultado.textContent = res;
+     resultado.textContent = res;
     }
 }
