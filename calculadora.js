@@ -78,7 +78,7 @@ function init(){
     }
     igual.onclick = function(e){
         operandob=resultado.textContent;
-        resolver();
+       resolver() 
     }
 }
 function limpiar(){
@@ -107,5 +107,10 @@ function resolver(){
             break;
     }
     resetear();
+    if (res="NaN" || "Inf") {
+        resultado.textContent="ERROR";
+    } else {
+    
     resultado.textContent = res;
+    }
 }
